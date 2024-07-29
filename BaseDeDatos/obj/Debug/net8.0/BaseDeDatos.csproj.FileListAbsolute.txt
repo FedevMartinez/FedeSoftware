@@ -1,0 +1,14 @@
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\bin\Debug\net8.0\BaseDeDatos.deps.json
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\bin\Debug\net8.0\BaseDeDatos.runtimeconfig.json
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\bin\Debug\net8.0\BaseDeDatos.dll
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\bin\Debug\net8.0\BaseDeDatos.pdb
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.csproj.AssemblyReference.cache
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.AssemblyInfoInputs.cache
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.AssemblyInfo.cs
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.csproj.CoreCompileInputs.cache
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.dll
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\refint\BaseDeDatos.dll
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.pdb
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.genruntimeconfig.cache
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\ref\BaseDeDatos.dll
