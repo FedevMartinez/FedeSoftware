@@ -9,5 +9,7 @@ public partial class ResponsabilidadFiscal
 
     public string? Descripcion { get; set; }
 
+    public string? Codigo { get; set; }
+
     public virtual ICollection<ClienteProveedor> ClienteProveedors { get; set; } = new List<ClienteProveedor>();
 }

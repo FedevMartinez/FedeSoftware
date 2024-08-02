@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\fedesoftware\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|solutionrelative:fedesoftware\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\fedesoftware\\controllers\\clienteproveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|solutionrelative:fedesoftware\\controllers\\clienteproveedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\fedesoftware\\services\\clienteproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|solutionrelative:fedesoftware\\services\\clienteproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\fedesoftware\\models\\provinciaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|solutionrelative:fedesoftware\\models\\provinciaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\fedesoftware\\services\\iclienteproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07CE37BE-B749-453D-A8C4-1307F810C636}|FedeSoftware\\FedeSoftware.csproj|solutionrelative:fedesoftware\\services\\iclienteproveedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\basededatos\\repository\\repositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|solutionrelative:basededatos\\repository\\repositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\basededatos\\repository\\irepositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|solutionrelative:basededatos\\repository\\irepositorygeneric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|c:\\users\\54113\\desktop\\proyectos\\fedesoftware\\basededatos\\contexto\\fedebasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27519D67-D2A7-49E6-BEBF-0FB5A3DB052A}|BaseDeDatos\\BaseDeDatos.csproj|solutionrelative:basededatos\\contexto\\fedebasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +22,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FedeSoftware\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FedeSoftware\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADwAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-26T19:56:25.305Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IClienteProveedorService.cs",
-              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Services\\IClienteProveedorService.cs",
-              "RelativeDocumentMoniker": "FedeSoftware\\Services\\IClienteProveedorService.cs",
-              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Services\\IClienteProveedorService.cs",
-              "RelativeToolTip": "FedeSoftware\\Services\\IClienteProveedorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T19:55:09.202Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteProveedorService.cs",
-              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Services\\ClienteProveedorService.cs",
-              "RelativeDocumentMoniker": "FedeSoftware\\Services\\ClienteProveedorService.cs",
-              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Services\\ClienteProveedorService.cs",
-              "RelativeToolTip": "FedeSoftware\\Services\\ClienteProveedorService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T19:53:54.426Z"
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepositoryGeneric.cs",
-              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Repository\\IRepositoryGeneric.cs",
-              "RelativeDocumentMoniker": "BaseDeDatos\\Repository\\IRepositoryGeneric.cs",
-              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Repository\\IRepositoryGeneric.cs",
-              "RelativeToolTip": "BaseDeDatos\\Repository\\IRepositoryGeneric.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T19:48:20.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RepositoryGeneric.cs",
-              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Repository\\RepositoryGeneric.cs",
-              "RelativeDocumentMoniker": "BaseDeDatos\\Repository\\RepositoryGeneric.cs",
-              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Repository\\RepositoryGeneric.cs",
-              "RelativeToolTip": "BaseDeDatos\\Repository\\RepositoryGeneric.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAACUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T19:47:42.634Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProvinciaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Models\\ProvinciaViewModel.cs",
+              "RelativeDocumentMoniker": "FedeSoftware\\Models\\ProvinciaViewModel.cs",
+              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Models\\ProvinciaViewModel.cs",
+              "RelativeToolTip": "FedeSoftware\\Models\\ProvinciaViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T01:43:56.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ClienteProveedorController.cs",
               "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Controllers\\ClienteProveedorController.cs",
               "RelativeDocumentMoniker": "FedeSoftware\\Controllers\\ClienteProveedorController.cs",
               "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\FedeSoftware\\Controllers\\ClienteProveedorController.cs",
               "RelativeToolTip": "FedeSoftware\\Controllers\\ClienteProveedorController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCAAAAAqAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAcwD8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T19:46:44.825Z"
+              "WhenOpened": "2024-07-30T00:31:47.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FedeBaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Contexto\\FedeBaseContext.cs",
+              "RelativeDocumentMoniker": "BaseDeDatos\\Contexto\\FedeBaseContext.cs",
+              "ToolTip": "C:\\Users\\54113\\Desktop\\Proyectos\\FedeSoftware\\BaseDeDatos\\Contexto\\FedeBaseContext.cs",
+              "RelativeToolTip": "BaseDeDatos\\Contexto\\FedeBaseContext.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAAAKgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T00:23:30.497Z"
             }
           ]
         }

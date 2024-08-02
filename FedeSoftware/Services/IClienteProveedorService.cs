@@ -5,8 +5,8 @@ namespace FedeSoftware.Services
 {
     public interface IClienteProveedorService 
     {
-        void Crear(ClienteProveedor clienteProveedor);
+        void Create(ClienteProveedor clienteProveedor);
         IEnumerable<ClienteProveedor> Index();
-        ClienteProveedor GetAsync(int id);
+        ClienteProveedor GetClienteProveedor(int id);
     }
 }

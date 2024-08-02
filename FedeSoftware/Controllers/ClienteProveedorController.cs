@@ -9,6 +9,10 @@ using BaseDeDatos.Contexto;
 using BaseDeDatos.Entidades;
 using BaseDeDatos.Repository;
 using FedeSoftware.Services;
+using FedeSoftware.Models;
+using System.Security.Policy;
+using System.Text.Json;
+using System.ComponentModel;
 
 namespace FedeSoftware.Controllers
 {
@@ -26,23 +30,15 @@ namespace FedeSoftware.Controllers
         public async Task<IActionResult> Index()
         {
             var list = Service.Index();
-            //var fedeBaseContext = _context.ClienteProveedores.Include(c => c.ResponsabilidadFiscal);
+
             return View(list);
         }
 
         // GET: ClienteProveedor/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            var clienteProveedor = Service.GetClienteProveedor(id);
 
-            var clienteProveedor = Service.GetAsync(id);
-
-            //var clienteProveedor = await _context.ClienteProveedores
-            //    .Include(c => c.ResponsabilidadFiscal)
-            //    .FirstOrDefaultAsync(m => m.ClienteProveedorId == id);
             if (clienteProveedor == null)
             {
                 return NotFound();
@@ -55,6 +51,13 @@ namespace FedeSoftware.Controllers
         public IActionResult Create()
         {
             ViewData["ResponsabilidadFiscalId"] = new SelectList(_context.ResponsabilidadFiscales, "ResponsabilidadFiscalId", "Descripcion");
+
+            // CONSUMIMOS API DEL GOBIERNO PARA OBTENER LAS PROVINCIAS
+            var provincias = ObtenerProvincias();
+                       
+
+            ViewData["Provincias"] = new SelectList(provincias.Result.ToList(), "id", "nombre");
+
             return View();
         }
 
@@ -63,18 +66,20 @@ namespace FedeSoftware.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClienteProveedorId,RazonSocial,Nombre,Apellido,Direccion,Localidad,Whatsapp,Cuit,EsCliente,EsProveedor,ResponsabilidadFiscalId")] ClienteProveedor clienteProveedor)
+        public async Task<IActionResult> Create(ClienteProveedorViewModel clienteProveedor)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(clienteProveedor);
-                await _context.SaveChangesAsync();
+                var clienteProveedorEntity = clienteProveedor.ToEntity();
+
+                Service.Create(clienteProveedorEntity);
+
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ResponsabilidadFiscalId"] = new SelectList(_context.ResponsabilidadFiscales, "ResponsabilidadFiscalId", "ResponsabilidadFiscalId", clienteProveedor.ResponsabilidadFiscalId);
             return View(clienteProveedor);
         }
-
+        
         // GET: ClienteProveedor/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -165,6 +170,41 @@ namespace FedeSoftware.Controllers
         private bool ClienteProveedorExists(int id)
         {
             return _context.ClienteProveedores.Any(e => e.ClienteProveedorId == id);
+        }
+
+        private async Task<List<ProvinciaViewModel>> ObtenerProvincias()
+        {
+            List<ProvinciaViewModel> provincias = new List<ProvinciaViewModel>();
+
+            string url = "https://apis.datos.gob.ar/georef/api/provincias";
+
+            // Crear una instancia de HttpClient
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    // Enviar una solicitud GET a la API
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // Asegurarse de que la respuesta es exitosa
+                    response.EnsureSuccessStatusCode();
+
+                    // Leer la respuesta como una cadena
+                    string responseBody = await response.Content.ReadAsStringAsync();
+
+                    ProvinciaResponseViewModel result = JsonSerializer.Deserialize<ProvinciaResponseViewModel>(responseBody)!;
+
+                    provincias = result.provincias;
+
+                    // Imprimir la respuesta
+                    Console.WriteLine(responseBody);
+                }
+                catch (HttpRequestException e)
+                {
+                    Console.WriteLine($"Excepción al realizar la solicitud: {e.Message}");
+                }
+            }
+            return provincias;
         }
     }
 }

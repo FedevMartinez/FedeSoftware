@@ -19,12 +19,14 @@ public partial class FedeBaseContext : DbContext
     public virtual DbSet<Categoria> Categorias { get; set; }
 
     public virtual DbSet<ClienteProveedor> ClienteProveedores { get; set; }
+    public virtual DbSet<Localidad> Localidades { get; set; }
 
     public virtual DbSet<Movimiento> Movimientos { get; set; }
 
     public virtual DbSet<MovimientoDet> MovimientoDets { get; set; }
 
     public virtual DbSet<Producto> Productos { get; set; }
+    public virtual DbSet<Provincia> Provincias { get; set; }
 
     public virtual DbSet<ResponsabilidadFiscal> ResponsabilidadFiscales { get; set; }
 
@@ -80,6 +82,21 @@ public partial class FedeBaseContext : DbContext
             entity.HasOne(d => d.ResponsabilidadFiscal).WithMany(p => p.ClienteProveedors)
                 .HasForeignKey(d => d.ResponsabilidadFiscalId)
                 .HasConstraintName("FK__ClientePr__Respo__49C3F6B7");
+        });
+
+        modelBuilder.Entity<Localidad>(entity =>
+        {
+            entity.HasKey(e => e.LocalidadId).HasName("PK__Localida__6E2890A2A45EBD7E");
+
+            entity.ToTable("Localidad");
+
+            entity.Property(e => e.Codigo).HasMaxLength(20);
+            entity.Property(e => e.Descripcion).HasMaxLength(255);
+
+            entity.HasOne(d => d.Provincia).WithMany(p => p.Localidads)
+                .HasForeignKey(d => d.ProvinciaId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Localidad__Provi__5EBF139D");
         });
 
         modelBuilder.Entity<Movimiento>(entity =>
@@ -142,6 +159,16 @@ public partial class FedeBaseContext : DbContext
             entity.HasOne(d => d.Categoria).WithMany(p => p.Productos)
                 .HasForeignKey(d => d.CategoriaId)
                 .HasConstraintName("FK__Producto__Catego__5165187F");
+        });
+
+        modelBuilder.Entity<Provincia>(entity =>
+        {
+            entity.HasKey(e => e.ProvinciaId).HasName("PK__Provinci__F7CBC777C6F3A778");
+
+            entity.ToTable("Provincia");
+
+            entity.Property(e => e.Codigo).HasMaxLength(20);
+            entity.Property(e => e.Descripcion).HasMaxLength(255);
         });
 
         modelBuilder.Entity<ResponsabilidadFiscal>(entity =>

@@ -252,3 +252,4 @@ C:\Users\54113\Desktop\Proyectos\FedeSoftware\FedeSoftware\bin\Debug\net8.0\runt
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\FedeSoftware\bin\Debug\net8.0\BaseDeDatos.dll
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\FedeSoftware\bin\Debug\net8.0\BaseDeDatos.pdb
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\FedeSoftware\obj\Debug\net8.0\FedeSoft.DFB2FCA6.Up2Date
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\FedeSoftware\obj\Debug\net8.0\FedeSoftware.sourcelink.json

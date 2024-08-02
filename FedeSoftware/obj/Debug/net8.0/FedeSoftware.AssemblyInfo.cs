@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FedeSoftware")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2772941048de5fcadeec0285fba69a0f05df1e5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FedeSoftware")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FedeSoftware")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,24 +14,27 @@ namespace FedeSoftware.Services
         }
 
 
-        public void Crear(ClienteProveedor clienteProveedor)
+        public void Create(ClienteProveedor clienteProveedor)
         {
             //validar etc
-            var result = Repository.CreateAsync(clienteProveedor);
+            if (clienteProveedor.Nombre != "")
+            {
+                var result = Repository.CreateAsync(clienteProveedor);
+            }
+
 
         }
         public IEnumerable<ClienteProveedor> Index()
         {
-            //validar etc
-            var result = Repository.ListAsync();
+            // Agregar validacion si es cliente, proveedor, o ambas
+            var result = Repository.Index();
 
-            return (IEnumerable<ClienteProveedor>)result;
+            return result;
         }
 
-        public ClienteProveedor GetAsync(int id)
+        public ClienteProveedor GetClienteProveedor(int id)
         {
-            //validar etc
-            var result = Repository.GetAsync(id);
+            var result = Repository.Get(id);
 
             return result;
         }

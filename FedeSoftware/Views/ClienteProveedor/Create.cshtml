@@ -1,4 +1,4 @@
-﻿@model BaseDeDatos.Entidades.ClienteProveedor
+﻿@model ClienteProveedorViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -6,11 +6,12 @@
 
 <h1>Create</h1>
 
-<h4>ClienteProveedor</h4>
+<h4>Cliente / Proveedor</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
+<form asp-action="Create">
+
+    <div class="row">
+        <div class="col-md-4">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="RazonSocial" class="control-label"></label>
@@ -27,10 +28,19 @@
                 <input asp-for="Apellido" class="form-control" />
                 <span asp-validation-for="Apellido" class="text-danger"></span>
             </div>
+        </div>
+        <div class="col-md-4">
             <div class="form-group">
                 <label asp-for="Direccion" class="control-label"></label>
                 <input asp-for="Direccion" class="form-control" />
                 <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @* <label asp-for="ProvinciaId" class="control-label"></label> *@
+                @* <select asp-for="ProvinciaId" class="form-control" asp-items="ViewBag.Provincias"></select> *@
+
+                <label class="control-label">Provincia</label>
+                <select class="form-control" asp-items="ViewBag.Provincias"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Localidad" class="control-label"></label>
@@ -42,36 +52,34 @@
                 <input asp-for="Whatsapp" class="form-control" />
                 <span asp-validation-for="Whatsapp" class="text-danger"></span>
             </div>
+        </div>
+        <div class="col-md-4">
             <div class="form-group">
                 <label asp-for="Cuit" class="control-label"></label>
                 <input asp-for="Cuit" class="form-control" />
                 <span asp-validation-for="Cuit" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EsCliente" class="control-label"></label>
-                <input asp-for="EsCliente" class="form-control" />
-                <span asp-validation-for="EsCliente" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EsProveedor" class="control-label"></label>
-                <input asp-for="EsProveedor" class="form-control" />
-                <span asp-validation-for="EsProveedor" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="ResponsabilidadFiscalId" class="control-label"></label>
-                <select asp-for="ResponsabilidadFiscalId" class ="form-control" asp-items="ViewBag.ResponsabilidadFiscalId"></select>
+                <select asp-for="ResponsabilidadFiscalId" class="form-control" asp-items="ViewBag.ResponsabilidadFiscalId"></select>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+            <!-- Correct Button -->
+
+        </div>
+    </div>
+</form>
+<div class="row">
+
+    <div>
+        <a class="btn btn-dark" asp-action="Index">Back to List</a>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

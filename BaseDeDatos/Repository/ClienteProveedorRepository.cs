@@ -16,7 +16,7 @@ namespace BaseDeDatos.Repository
 
         public ClienteProveedorRepository(FedeBaseContext context) : base(context)
         {
-            
+            _context = context;
         }
 
         public ClienteProveedor GetClienteProveedorByName(string nombre)
@@ -25,5 +25,18 @@ namespace BaseDeDatos.Repository
         }
 
 
+        public IEnumerable<ClienteProveedor> Index()
+        {
+            IEnumerable<ClienteProveedor> ClienteProveedores = _context.ClienteProveedores.Include(x => x.ResponsabilidadFiscal).ToList();
+
+            return ClienteProveedores;
+        }
+
+        public ClienteProveedor Get(int id)
+        {
+            var clienteProveedor = _context.ClienteProveedores.Include(x => x.ResponsabilidadFiscal).Where(x => x.ClienteProveedorId == id).FirstOrDefault();
+
+            return clienteProveedor;
+        }
     }
 }

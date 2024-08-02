@@ -10,5 +10,8 @@ namespace BaseDeDatos.Repository
     public interface IClienteProveedorRepository : IRepositoryGeneric<ClienteProveedor>
     {
         ClienteProveedor GetClienteProveedorByName(string nombre);
+
+        IEnumerable<ClienteProveedor> Index();
+        ClienteProveedor Get(int id);
     }
 }

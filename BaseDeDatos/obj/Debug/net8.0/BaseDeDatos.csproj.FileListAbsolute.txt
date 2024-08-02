@@ -12,3 +12,4 @@ C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\refin
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.pdb
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.genruntimeconfig.cache
 C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\ref\BaseDeDatos.dll
+C:\Users\54113\Desktop\Proyectos\FedeSoftware\BaseDeDatos\obj\Debug\net8.0\BaseDeDatos.sourcelink.json

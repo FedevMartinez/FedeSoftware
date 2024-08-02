@@ -1,3 +1,5 @@
+using BaseDeDatos.Entidades;
+
 namespace FedeSoftware.Models
 {
     public class ClienteProveedorViewModel
@@ -24,8 +26,31 @@ namespace FedeSoftware.Models
 
         public int? ResponsabilidadFiscalId { get; set; }
 
-        public virtual ICollection<MovimientoViewModel> Movimientos { get; set; } = new List<MovimientoViewModel>();
+        //public virtual ICollection<MovimientoViewModel> Movimientos { get; set; } = new List<MovimientoViewModel>();
 
-        public virtual ResponsabilidadFiscalViewModel? ResponsabilidadFiscal { get; set; }
+        //public virtual ResponsabilidadFiscalViewModel? ResponsabilidadFiscal { get; set; }
+
+        public ClienteProveedorViewModel()
+        {
+                
+        }
+
+        public ClienteProveedor ToEntity()
+        {
+            var clienteProveedor = new ClienteProveedor
+            {
+                RazonSocial = RazonSocial,
+                Nombre = Nombre,
+                Apellido = Apellido,
+                Direccion = Direccion,
+                Localidad = Localidad,
+                Whatsapp = Whatsapp,
+                Cuit = Cuit,
+                ResponsabilidadFiscalId = ResponsabilidadFiscalId,
+                EsCliente = EsCliente,
+                EsProveedor = EsProveedor
+            };
+            return clienteProveedor;
+        }
     }
 }
